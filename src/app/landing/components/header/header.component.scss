@@ -1,0 +1,24 @@
+.contenido-inicial {
+    background-color: var(--background-color);
+}
+
+/* Estilos para el contenedor inicial */
+.contenedor-inicial {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+/* Estilos para el soporte al cliente */
+.soporte-cliente {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-logo{
+    display: flex;
+    align-items: center;
+}
