@@ -1,0 +1,25 @@
+/* Centrar todo el contenido dentro del body */
+html, body {
+    height: 100%;  /* Asegura que el body ocupe toda la pantalla */
+    margin: 0;  /* Elimina márgenes por defecto */
+    display: flex;  /* Usamos Flexbox */
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;  /* Centra verticalmente */
+  }
+  
+  /* Contenedor que engloba a <app-formulario> y <router-outlet> */
+  .main-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* Ajustes opcionales para el formulario si lo necesitas */
+  app-formulario {
+    width: 600px;  /* Ajusta el ancho a tus necesidades */
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
