@@ -1,20 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { TablaComponent } from './tabla/tabla.component';
+import { FormularioComponent } from './formulario/formulario.component';
+
 
 
 @NgModule({
   declarations: [
-    SidebarComponent,
-    TablaComponent
+    FormularioComponent
   ],
   imports: [
     CommonModule
   ],
   exports:[
-    SidebarComponent,
-    TablaComponent
+    FormularioComponent
   ]
 })
 export class ComponentsModule { }

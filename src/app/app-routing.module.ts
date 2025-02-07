@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { IndexComponent } from './landing/pages/index/index.component';
+
 
 const routes: Routes = [
-  {path: '', component: IndexComponent},
-  {path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
-];
+  { path: '', redirectTo: '/auth/login', pathMatch: 'full' },  // Redirige a login por defecto
+  { path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) }, // Carga el módulo de auth
+  {path:'admin',loadChildren:() => import('./admin/admin.module').then(m=> m.AdminModule)}
+  ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -1,0 +1,86 @@
+.admin-layout {
+    display: flex;
+  }
+  
+  app-sidebar {
+    width: 250px; /* Ajusta el ancho del sidebar */
+    flex-shrink: 0;
+  }
+  
+  .admin-panel {
+    flex-grow: 1;
+    padding: 20px;
+    max-width: calc(100% - 250px);
+    margin-left: 250px; /* Asegura que el contenido no se superponga con el sidebar */
+  
+    .title {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    .add-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 15px;
+      display: block;
+    }
+  
+    .table-container {
+      overflow-x: auto;
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      
+      th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+  
+      th {
+        background-color: #795548;
+        color: white;
+      }
+  
+      tbody tr:hover {
+        background-color: #f5f5f5;
+      }
+    }
+  
+    .edit-button {
+      background-color: #FFC107;
+      color: white;
+      padding: 8px;
+      border: none;
+      cursor: pointer;
+      margin-right: 5px;
+    }
+  
+    .delete-button {
+      background-color: #F44336;
+      color: white;
+      padding: 8px;
+      border: none;
+      cursor: pointer;
+    }
+  
+    button {
+      border-radius: 5px;
+      transition: 0.3s;
+      
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  

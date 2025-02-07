@@ -1,0 +1,154 @@
+/* Asegúrate de que el body y el html ocupen toda la altura de la pantalla */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;  /* Agregado para usar Flexbox */
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;  /* Centra verticalmente */
+  }
+  
+  /* Estilo del contenedor principal */
+  .form-container {
+    width: 600px;  /* Aumenté el ancho */
+    height: 870px; /* Aumenté la altura */
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 30px 40px;  /* Aumenté el padding */
+  }
+  
+  /* Título */
+  .title {
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin: 20px 0 30px 0;
+    font-size: 36px;  /* Aumenté el tamaño de la fuente */
+    font-weight: 800;
+  }
+  
+  /* Formulario */
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;  /* Aumenté el espacio entre los campos */
+    margin-bottom: 20px;
+  }
+  
+  /* Campos de entrada */
+  .input {
+    border-radius: 20px;
+    border: 1px solid #c0c0c0;
+    outline: 0 !important;
+    box-sizing: border-box;
+    padding: 16px 20px;  /* Aumenté el padding */
+    font-size: 18px;  /* Aumenté el tamaño de la fuente */
+  }
+  
+  /* Enlace de la página (olvidé mi contraseña) */
+  .page-link {
+    text-decoration: underline;
+    margin: 0;
+    text-align: end;
+    color: #747474;
+    text-decoration-color: #747474;
+  }
+  
+  .page-link-label {
+    cursor: pointer;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 14px;  /* Aumenté el tamaño de la fuente */
+    font-weight: 700;
+  }
+  
+  .page-link-label:hover {
+    color: #000;
+  }
+  
+  /* Botón de inicio de sesión */
+  .form-btn {
+    padding: 16px 20px;  /* Aumenté el padding */
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    border: 0 !important;
+    outline: 0 !important;
+    background: teal;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;  /* Aumenté el tamaño de la fuente */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .form-btn:active {
+    box-shadow: none;
+  }
+  
+  /* Texto de "No tienes cuenta" */
+  .sign-up-label {
+    margin: 0;
+    font-size: 14px;  /* Aumenté el tamaño de la fuente */
+    color: #747474;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  .sign-up-link {
+    margin-left: 1px;
+    font-size: 16px;  /* Aumenté el tamaño de la fuente */
+    text-decoration: underline;
+    text-decoration-color: teal;
+    color: teal;
+    cursor: pointer;
+    font-weight: 800;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  /* Contenedor de botones (Apple, Google) */
+  .buttons-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 20px;  /* Aumenté el espacio entre los botones */
+  }
+  
+  /* Botones de login con Apple y Google */
+  .apple-login-button,
+  .google-login-button {
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 16px 20px;  /* Aumenté el padding */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 16px;  /* Aumenté el tamaño de la fuente */
+    gap: 10px;
+  }
+  
+  .apple-login-button {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+  }
+  
+  .google-login-button {
+    border: 2px solid #747474;
+  }
+  
+  .apple-icon,
+  .google-icon {
+    font-size: 22px;  /* Aumenté el tamaño del ícono */
+    margin-bottom: 1px;
+  }
+  

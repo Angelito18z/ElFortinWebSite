@@ -1,0 +1,91 @@
+.admin-layout {
+    display: flex;
+    height: 100vh; /* Ocupa toda la pantalla */
+  }
+  
+  app-sidebar {
+    width: 280px; /* Sidebar un poco más ancho */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #5D4037;
+    color: white;
+    z-index: 1000;
+    font-size: 22px; /* Aumentar tamaño del texto en sidebar */
+    padding: 20px;
+  }
+  
+  .admin-content {
+    flex-grow: 1;
+    padding: 40px; /* Más espacio alrededor del contenido */
+    margin-left: 280px; /* Ajuste por el sidebar más ancho */
+    max-width: 1400px; /* Más ancho el contenido */
+    width: calc(100% - 280px);
+    font-size: 20px; /* Aumentar tamaño de texto en general */
+   
+    /* Fondo con imagen */
+  background-image: url('/recursos/images/br.jpg');
+  background-size: cover; /* Para que cubra todo */
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+  
+  /* Asegurar que la tabla se vea más grande */
+  app-tabla {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Estilos dentro del componente tabla */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 22px; /* Aumentar el tamaño de texto en la tabla */
+  
+    th, td {
+      padding: 16px; /* Más espacio en celdas */
+      text-align: left;
+      border-bottom: 2px solid #ddd;
+    }
+  
+    th {
+      background-color: #795548;
+      color: white;
+      font-size: 24px;
+    }
+  
+    tbody tr:hover {
+      background-color: #f5f5f5;
+    }
+  }
+  
+  /* Botones más grandes */
+  button {
+    padding: 14px 20px;
+    font-size: 22px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .add-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .edit-button {
+    background-color: #FFC107;
+    color: white;
+  }
+  
+  .delete-button {
+    background-color: #F44336;
+    color: white;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  

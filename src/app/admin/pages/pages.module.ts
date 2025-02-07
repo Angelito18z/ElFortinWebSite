@@ -9,6 +9,7 @@ import { ProductosComponent } from './productos/productos.component';
 import { RecetasComponent } from './recetas/recetas.component';
 import { VentasComponent } from './ventas/ventas.component';
 import { ComponentsModule } from '../components/components.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ComponentsModule } from '../components/components.module';
   ],
   imports: [
     CommonModule,
-    ComponentsModule
+    ComponentsModule,
+    RouterModule
   ]
 })
 export class PagesModule { }
