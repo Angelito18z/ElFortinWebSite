@@ -3,10 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { IndexComponent } from './landing/pages/index/index.component';
 
 const routes: Routes = [
-  {
-    path:'index',
-    component: IndexComponent
-  }
+  {path: '', component: IndexComponent},
+  {path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
 ];
 
 @NgModule({

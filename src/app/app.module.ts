@@ -10,6 +10,7 @@ import { LandingModule } from './landing/landing.module';
 @NgModule({
   declarations: [
     AppComponent,
+    
    
 
   ],
